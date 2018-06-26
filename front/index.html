@@ -1,0 +1,50 @@
+	<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Book Frontend</title>
+	<!--libraries begin	-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!--libraries finish -->
+	<link rel="stylesheet" href="style/style.css" />
+	<script src="js/new.js"></script>
+	<script src="js/form.js"></script>
+	<script src="js/mustache.js"></script>
+</head>
+<base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+<header>
+	<h1>Zbiór <span>ksiąg</span></h1>
+	<img src="mountain-range-front.png">
+</header>
+
+<body>
+	<div class="form-style-7">
+		<ul>
+			<li>
+				<input type="text" name="name" maxlength="100" id="title">
+				<span>Wpisz tytuł książki</span>
+			</li>
+			<li>
+
+				<input type="text" name="email" maxlength="100" id="author">
+				<span>Podaj autora książki</span>
+			</li>
+			<li>
+				<label for="text">ISBN</label>
+				<input type="text" name="url" maxlength="30" id="isbn">
+				<span>Podaj ISBN książki</span>
+			</li>
+			<li>
+				<textarea name="bio" onkeyup="adjust_textarea(this)" id="type"></textarea>
+				<span>Podaj typ książki</span>
+			</li>
+			<li>
+			<button id="add-order">Dodaj</button>
+			</li>
+		</ul>
+	</div>
+	<div id="book-list"></div>
+</body>
+
+</html>

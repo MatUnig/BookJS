@@ -1,0 +1,211 @@
+body{
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}
+li {
+	    color: blue;
+list-style-type: none;
+	font-family: Snippet;
+	font-size: 23px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 700;
+	line-height: 23px;
+
+}
+.fancy-box {
+background: #666;
+color: #fff;
+text-align: center;
+border: 5px solid #444;
+border-radius: 5px;
+padding: 5px;
+margin: 1em 0;
+}
+.book {
+	border: solid blue;
+	background-color: lightgreen;
+}
+.book-title{
+	font-weight: bold;
+}
+
+.hidden {
+	display: none;
+}
+.delete-btn{
+    background: -webkit-linear-gradient(top, #DD4B39, #D14836); 
+    background: -moz-linear-gradient(top, #DD4B39, #D14836); 
+    background: -ms-linear-gradient(top, #DD4B39, #D14836); 
+    border: 1px solid #DD4B39;
+    color: white;
+    text-shadow: 0 1px 0 #C04131;
+}
+@font-face {
+		font-family: 'Sucrose Bold Two';
+		src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+		}
+@font-face {
+    font-family: 'IM Fell French Canon Pro';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/im-fell-french-canon-pro.woff2') format('woff2');
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header { 
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mountain-range.jpg) no-repeat;
+	padding-top: 61.93333333%;
+	background-size: cover;
+  font-family: 'Sucrose Bold Two';
+}
+header img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45.8%;
+}
+header h1 { 
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+  font-size: 12vw;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+}
+header h1 span {
+  display: block;
+  font-size: 8.75vw;
+}
+main { 
+  background: #fff;
+  position: relative;
+  border: 1px solid #fff;
+  font-family: 'IM Fell French Canon Pro';
+  font-size: 1.4rem;
+  padding: 2rem 25%;
+  line-height: 1.6;
+}
+@media all and (max-width: 400px) {
+  main { padding: 2rem; }
+}
+.form-style-7{
+    max-width:400px;
+    margin:50px auto;
+    background:#fff;
+    border-radius:2px;
+    padding:20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 h1{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #5C5C5C;
+    font-size:x-large;
+}
+.form-style-7 ul{
+    list-style:none;
+    padding:0;
+    margin:0;   
+}
+.form-style-7 li{
+    display: block;
+    padding: 9px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.form-style-7 li:last-child{
+    border:none;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.form-style-7 li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 input[type="text"]:focus,
+.form-style-7 input[type="date"]:focus,
+.form-style-7 input[type="datetime"]:focus,
+.form-style-7 input[type="email"]:focus,
+.form-style-7 input[type="number"]:focus,
+.form-style-7 input[type="search"]:focus,
+.form-style-7 input[type="time"]:focus,
+.form-style-7 input[type="url"]:focus,
+.form-style-7 input[type="password"]:focus,
+.form-style-7 textarea:focus,
+.form-style-7 select:focus 
+{
+}
+.form-style-7 li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.form-style-7 textarea{
+    resize:none;
+}
+#add-order,
+#add-order{
+    background: #2471FF;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 3px solid #5994FF;
+    border-radius: 3px;
+    color: #D2E2FF;
+}
+#add-order:hover,
+#add-order:hover{
+    background: #6B9FFF;
+    color:#fff;
+}
