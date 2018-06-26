@@ -17,13 +17,11 @@ $(function () {
 		"</li>";
 
 	function addBook(book) {
-		//		$books.append('<li> Tytuł: ' + book.title + ' Autor: ' + book.author+ '</li>');
 		$books.append(Mustache.render(bookTemplate, book));
 	}
 	$.ajax({
 		type: 'GET',
 		url: "http://localhost:8282/books/",
-	//	url: "http://localhost:8080/books/",
 		dataType: "json",
 		contentType: "application/json; charset=utf-8",
 		success: function (returnedBooks) {
@@ -59,7 +57,7 @@ $(function () {
 		var self = this;
 		$.ajax({
 			type: 'DELETE', 
-			url: "http://localhost:8282/books/" + $(this).attr('data-id'),  // Pomocy! Usuwa dopiero po odświeżeniu, ponieważ nie od 																	razu nadaje atrybut data-id
+			url: "http://localhost:8282/books/" + $(this).attr('data-id'), 
 			success: function(){
 			$li.fadeOut(800, function(){
 				$(this).remove();
