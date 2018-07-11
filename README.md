@@ -1,6 +1,6 @@
 # BankAccount
 
-JavaScript project using AJAX
+JavaScript project using AJAX and JSON.
 
 ## Meta
 
